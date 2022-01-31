@@ -23,36 +23,32 @@ warning: Error disabling address space randomization: Operation not permitted
 
 Breakpoint 1, main () at p2original.c:6
 6     printf("enter three numbers\n");
-(gdb) 
 (gdb) n
 enter three numbers
 8     a=input();
 (gdb) n
-6
+5 
 9     b=input();
 (gdb) n
-8
+7
 10    c=input();
 (gdb) n
-8
+9
 11    l=cmp(a,b,c);
 (gdb) n
 12    printf("the greatest of%d,%d and %d is %d\n",a, b, c ,l);
 (gdb) n
-the greatest of6,8 and 8 is 8
+the greatest of5,7 and 9 is 9
 13    return 0;
 (gdb) n
 14  }
 (gdb) n
-__libc_start_main (main=0x564501a0076a <main>, 
-    argc=1, argv=0x7ffd8bbed838, 
-    init=<optimized out>, fini=<optimized out>, 
-    rtld_fini=<optimized out>, 
-    stack_end=0x7ffd8bbed828)
-    at ../csu/libc-start.c:344
+__libc_start_main (main=0x55a47f40076a <main>, argc=1, argv=0x7ffd118f01a8, 
+    init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, 
+    stack_end=0x7ffd118f0198) at ../csu/libc-start.c:344
 344 ../csu/libc-start.c: No such file or directory.
 (gdb) n
-[Inferior 1 (process 31) exited normally]
+[Inferior 1 (process 229) exited normally]
 (gdb) n
 The program is not being run.
 (gdb) q
