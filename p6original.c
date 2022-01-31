@@ -5,10 +5,10 @@ void output (char a[50],char[50],int result);
 int main()
 {
   char a[50],b[50];
-  int sum1,sum2,result);
-  input_two_strings(a,b);
+  int sum1,sum2,result;
+  input_two_string(a,b);
   result=strcmp(a,b);
-  output(a,b,result)
+  output(a,b,result);
   return 0;
 }
 void input_two_string(char a[50],char b[50])
